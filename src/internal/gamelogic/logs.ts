@@ -15,7 +15,6 @@ function block(ms: number) {
 }
 
 export async function writeLog(gameLog: GameLog): Promise<void> {
-  console.log("received game log...");
   block(writeToDiskSleep);
 
   const date = new Date(gameLog.currentTime);
